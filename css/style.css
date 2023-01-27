@@ -372,11 +372,13 @@ section#hero-info {
 	justify-content: space-between;
 	margin-top: 16px;
 	padding-right: 32px;
+	flex-direction: row-reverse;
 }
 
 .logo {
 	cursor: pointer;
 	margin: 8px 0 0 20px;
+	margin: 4px -16px 0 20px;
 	padding: 0;
 	width: 90px;
 	height: 90px;
@@ -388,7 +390,8 @@ section#hero-info {
 	width: 120px;
 	position: relative;
 	left: -15px;
-	top: -5px;
+	left: -10px;
+	/* top: -5px; */
 	height: auto;
 	margin: 0;
 	padding: 0;
@@ -399,6 +402,8 @@ section#hero-info {
 	display: flex;
 	flex-direction: column;
 	margin-top: 56px;
+	margin-top: 54px;
+	margin-left: 16px;
 }
 
 .switch,
