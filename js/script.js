@@ -124,10 +124,11 @@ $(document).ready(function () {
 		$(".hero-center-section .image-content .img-wrap").html(`<img src="${character.image.url}" alt="Super hero image">`)
 		$(".hero-center-section .info h3").text(character.name)
 
-		let biography = "";
-		if (character.biography["first-appearance"]) biography += `FIRST APPEARENCE: ${character.biography["first-appearance"]}`
-		// TODO: More bio stuff?
-		if (biography) $(".hero-center-section .info .biography").text(biography)
+		let biography = `<b>Alignment</b>: ${character.biography["alignment"]}<br>`
+		if (character.appearance.gender) biography += `<b>Gender</b>: ${character.appearance.gender}<br>`
+		if (character.biography["first-appearance"]) biography += `<b>First appearance</b>: ${character.biography["first-appearance"]}<br>`
+		if (character.work.base) biography += `<b>Work base</b>: ${character.work.base}<br>`
+		if (biography) $(".hero-center-section .info .biography").html(biography)
 
 		for (let [key, value] of Object.entries(character.powerstats)) {
 			$(`.hero-center-section .text-content .${key} h3`).text(value)
@@ -139,6 +140,4 @@ $(document).ready(function () {
 	searchButton.on("click", () => getSearchSuperHero())
 	searchQuery.on("keyup", (event) => { if (event.key === "Enter") getSearchSuperHero() })
 	randomHeroButton.on("click", () => getRandomSuperHero(randomHero()))
-	//randomHeroButton.on("click", () => getRandomSuperHero(921)) // broken URL
-	//randomHeroButton.on("click", () => getRandomSuperHero(694)) // "null" stats
 });
