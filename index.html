@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--
+	- any stat is null? remove from list
+-->
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="./js/jquery-3.6.3.min.js"></script>
+	<script src="./js/script.js" defer></script>
+	<title>myHeroes</title>
+	<link rel="stylesheet" href="./css/style.css">
+	<!-- <link rel="stylesheet" href="./css/effects.css"> -->
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="feature-elements">
+			<div class="logo">
+				<a href="#" target="_blank">
+					<img class="svg-image" src="./assets/noun-superhero-2972506-yellow.svg" alt="">
+				</a>
+			</div>
+
+			<div class="switch-mode">
+				<div class="switch">
+					<div class="circle hover-target"></div>
+				</div>
+			</div>
+		</div>
+		<div class="search-area">
+			<div class="search-container">
+				<input id="search-query" type="text" placeholder="at least 3 letters">
+				<button id="search-button">Search</button>
+			</div>
+			<div class="random-container">
+				<p class="opacity-60">or try and see what SuperHero turns up here...</p>
+				<button id="random-button">Get Random Hero</button>
+			</div>
+		</div>
+		<div id="errors" style="display: none;"></div>
+		<div class="hero-available-elements">
+			<ul class="slide-buttons"></ul>
+		</div>
+		<div id="preview-info" style="display:none">Click hero for information</div>
+
+		<!-- HERO INFORMATION TEMPLATE -->
+		<section id="hero-info" style="display:none">
+			<div class="hero-center-section">
+				<div class="container">
+					<div class="image-content">
+						<div class="img-wrap"></div>
+					</div>
+					<div class="text-content">
+						<div class="info">
+							<h3></h3>
+							<p class="small opacity-60"></p>
+							<p class="biography"></p>
+						</div>
+						<div id="stats">
+							<div class="intelligence">
+								<h3></h3>
+								<p>Intelligence</p>
+							</div>
+							<div class="strength">
+								<h3></h3>
+								<p>Strength</p>
+							</div>
+							<div class="speed">
+								<h3></h3>
+								<p>Speed</p>
+							</div>
+							<div class="durability">
+								<h3></h3>
+								<p>Durability</p>
+							</div>
+							<div class="power">
+								<h3></h3>
+								<p>Power</p>
+							</div>
+							<div class="combat">
+								<h3></h3>
+								<p>Combat</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<div class="footer">
+			<p class="small opacity-60">Superhero by Guilherme Schmitt from <a class="color-yellow"
+					href="https://thenounproject.com/browse/icons/term/superhero/" target="_blank"
+					title="Superhero Icons">Noun Project</a></p>
+		</div>
+
+	</div>
+
+</body>
+
+</html>
