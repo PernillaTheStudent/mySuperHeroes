@@ -55,13 +55,14 @@ p.small,
 	letter-spacing: 1px;
 }
 
+#preview-info p,
 .search-area p,
 .search-area h4 {
 	color: var(--white);
 	text-align: center;
 	line-height: 24px;
 }
-h1,
+
 h2,
 h3,
 h4,
@@ -71,10 +72,18 @@ h4,
 .h4 {
 	font-family: 'Poppins', sans-serif;
 	margin-bottom: 0.6rem;
-	color: var(--white);
 	color: var(--dark-blue);
 }
+h1 {
+	color: var(--white);
+	font-size: 48px;
+	text-align: center;
+	line-height: 64px;
+}
 
+body.light h1 {
+	color: var(--dark-blue);
+}
 h3,
 .h3 {
 	font-size: 38px;
@@ -148,12 +157,9 @@ mark {
 	opacity: 0.6;
 }
 
-
-
 .wrapper {
 	display: flex;
 	flex-direction: column;
-	/* Xheight: 100%; */
 	justify-content: flex-start;
 	margin-bottom: 24px;
 	max-width: 800px;
@@ -176,7 +182,7 @@ section#hero-info {
 	width: 100%;
 	border-top: 1px solid turquoise;
 	margin-top: 48px;
-	padding: 24px 48px;
+	padding: 24px 48px 48px;
 }
 
 .footer p {
@@ -192,7 +198,6 @@ section#hero-info {
 .hero-center-section.show {
 	display: flex;
 	justify-content: center;
-	/* transform: translateY(-50%); */
 	opacity: 1;
 }
 
@@ -203,8 +208,6 @@ section#hero-info {
 }
 
 .img-wrap {
-	/* height: 50vh; */
-	/* height: 490px; */
 	height: 560px;
 	width: calc(560px / 1.2); 
 	overflow: hidden;
@@ -217,10 +220,6 @@ section#hero-info {
 	width: 330px;
 	width: calc(560px / 1.2);
 	object-fit: cover;
-	/* background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/1.jpg"); */
-	/* background-size: cover;
-	background-position: center top;
-	background-repeat: no-repeat; */
 }
 
 .container {
@@ -238,7 +237,6 @@ section#hero-info {
 .text-content {
 	display: flex;
 	flex-direction: column;
-	/* flex: 1 0 50%; */
 	max-width: 330px;
 	background-color: #F6901A;
 	background-color: #de7b09;
@@ -293,9 +291,6 @@ section#hero-info {
 #stats .durability,
 #stats .power,
 #stats .combat {
-	/* grid-column: 1/2;
-	grid-row: 1/2; */
-	/* background-color: var(--yellow); */
 	background-color: #F6901A;
 	text-align: center;
 	padding-top: 22px;
@@ -316,17 +311,15 @@ section#hero-info {
 	transition: all 300ms linear;
 	margin-top: 16px;
 	overflow-x: auto;
-	/* height: 148px; */
 	overflow-y: hidden;
 }
 
 #preview-info {
-	color: var(--white);
 	text-align: center;
+	margin-top: 8px;
 }
 
 .slide-buttons {
-	/* position: relative; */
 	display: flex;
 	list-style: none;
 	padding: 0;
@@ -401,7 +394,7 @@ section#hero-info {
 .switch-mode {
 	display: flex;
 	flex-direction: column;
-	margin-top: 40px;
+	margin-top: 56px;
 }
 
 .switch,
@@ -502,11 +495,8 @@ body.light {
 	background: var(--white);
 }
 
-body.light p {
-	color: var(--dark-blue);
-}
-
-body.light #preview-info,
+body.light p,
+body.light #preview-info p,
 body.light #errors {
 	color: var(--dark-blue);
 }

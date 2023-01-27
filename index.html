@@ -10,9 +10,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script src="./js/jquery-3.6.3.min.js"></script>
 	<script src="./js/script.js" defer></script>
-	<title>myHeroes</title>
+	<title>SuperHero Index</title>
 	<link rel="stylesheet" href="./css/style.css">
-	<!-- <link rel="stylesheet" href="./css/effects.css"> -->
 </head>
 
 <body>
@@ -29,14 +28,16 @@
 					<div class="circle hover-target"></div>
 				</div>
 			</div>
+
 		</div>
+		<h1>SuperHero <br>indeX</h1>
 		<div class="search-area">
 			<div class="search-container">
 				<input id="search-query" type="text" placeholder="at least 3 letters">
 				<button id="search-button">Search</button>
 			</div>
 			<div class="random-container">
-				<p class="opacity-60">or try and see what SuperHero turns up here...</p>
+				<p class="opacity-60">...or try and see what SuperHero turns up here...</p>
 				<button id="random-button">Get Random Hero</button>
 			</div>
 		</div>
@@ -44,7 +45,8 @@
 		<div class="hero-available-elements">
 			<ul class="slide-buttons"></ul>
 		</div>
-		<div id="preview-info" style="display:none">Click hero image for information</div>
+		<div id="preview-info" class="opacity-60" style="display:none">
+			<p>Click hero image for information</p></div>
 
 		<!-- HERO INFORMATION TEMPLATE -->
 		<section id="hero-info" style="display:none">
